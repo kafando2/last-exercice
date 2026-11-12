@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al Torneo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario de Inscripción</h1>
+        <p>Torneo de Videojuegos</p>
+    </header>
+
+    <main>
+
+        <form action="" method="get">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="16">
+
+                <label for="nickname">Nombre del jugador:</label>
+                <input type="text" id="nickname" name="nickname" minlength="3" maxlength="15" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del torneo</legend>
+
+                <label for="videojuego">Videojuego del torneo:</label>
+                <select id="videojuego" name="videojuego">
+                    <option value="">Selecciona un juego</option>
+                    <option value="fortnite">Fortnite</option>
+                    <option value="minecraft">Minecraft</option>
+                    <option value="fifa">EA Sports FC</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="lol">League of Legends</option>
+                </select>
+
+                <p>Plataforma:</p>
+
+                <label>
+                    <input type="radio" name="plataforma" value="PC">
+                    PC
+                </label>
+
+                <label>
+                    <input type="radio" name="plataforma" value="PlayStation">
+                    PlayStation
+                </label>
+
+                <label>
+                    <input type="radio" name="plataforma" value="Xbox">
+                    Xbox
+                </label>
+
+                <p>Disponibilidad horaria:</p>
+
+                <label>
+                    <input type="checkbox" name="horario" value="manana">
+                    Mañana
+                </label>
+
+                <label>
+                    <input type="checkbox" name="horario" value="tarde">
+                    Tarde
+                </label>
+
+                <label>
+                    <input type="checkbox" name="horario" value="noche">
+                    Noche
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información adicional</legend>
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+
+                <label>
+                    <input type="checkbox" name="normas" required>
+                    Acepto las
+                    <a href="normas.html" target="_blank">normas del torneo</a>
+                </label>
+
+            </fieldset>
+
+            <button type="submit">Inscribirse</button>
+            <button type="reset">Limpiar formulario</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
